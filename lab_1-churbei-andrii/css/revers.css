@@ -1,0 +1,39 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+  
+/* Для input */
+#inputNumber {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+  
+/* Для button */
+#reverseButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+  
+/* Для result */
+#result {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.5;
+}
