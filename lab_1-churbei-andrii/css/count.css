@@ -1,0 +1,25 @@
+/* Стиль для форми */
+#charCountForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+  
+/* Стиль для текстової області введення */
+#input-text {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+  
+/* Стиль відображення кількості символів */
+#char-count {
+  font-size: 14px;
+  margin-top: 10px;
+}
