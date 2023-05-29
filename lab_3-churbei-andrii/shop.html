@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initialscale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  <title>Магазин</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+  <div class="container1">
+    <div class="navbar">
+      <img src="images/logo.svg" class="logo" alt="logo"></button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="news.html"><span class="icon">📰</span> Новини</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="images/cart.png" class="cart-icon"></a>
+    </div>
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+          <div  style="float: left;">
+              <button id="closeBtn" class="close" onclick="close()">&times;</button>
+          </div>
+            <p>Please subscribe to..</p>
+              <button onclick="subscribe()" class="btn btn-success">Subscribe</button>
+      </div>
+  </div>
+  
+      <div id="knopka" class="m-3">
+  <div id="filters" class="ml-7">
+    <button onclick="getElements()">Все</button>
+    <button onclick="getElements(1)">Кросівки</button>
+    <button onclick="getElements(2)">Футболки</button>
+    <button onclick="getElements(3)">Носки</button>
+    <button onclick="getElements(4)">Аксесуари</button> 
+    
+  </div>
+  <div>
+    <select id="sortSelect" onchange="getElements()">
+      <option value="name">Сортувати за назвою</option>
+      <option value="priceAsc">Сортувати за ціною (зростання)</option>
+      <option value="priceDesc">Сортувати за ціною (спадання)</option>
+    </select>
+  </div>
+  <div id="container" class="p-2">
+    <div id="productList" class="p-3"></div>
+  </div>
+</div>
+
+  
+      <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+  
+      <script src="script.js" async defer></script>
+      <script src="cart.js" async defer></script>
+      
+      <script>
+        // Function to open the cart page
+        function openCartPage() {
+          window.location.href = "cart.html";
+        }
+      </script>
+
+</body>
+</html>
